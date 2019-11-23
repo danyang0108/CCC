@@ -1,23 +1,31 @@
-n=int(input())
-grid=[]
-for i in range(n):
-  grid.append(list(map(int,input().split())))
-edge=[grid[0][0],grid[0][n-1],grid[n-1][0],grid[n-1][n-1]]
-if max(edge)==edge[0]: #rotate 180
-  rotated = list(zip(*grid[::-1]))
-  rotated = list(zip(*rotated[::-1]))
-  for i in range(n):
-    print(' '.join(list(map(str,rotated[i]))))
-elif max(edge)==edge[1]:  #rotate 90
-  rotated = list(zip(*grid[::-1]))
-  for i in range(n):
-    print(' '.join(list(map(str,rotated[i]))))
-elif max(edge)==edge[2]: #rotate 270
-  rotated = list(zip(*grid[::-1]))
-  rotated = list(zip(*rotated[::-1]))
-  rotated = list(zip(*rotated[::-1]))
-  for i in range(n):
-    print(' '.join(list(map(str,rotated[i]))))
-else:
-  for i in range(n):
-    print(' '.join(list(map(str,grid[i]))))
+dis=list(map(int,input().split()))
+list1=dis.copy()
+count=0
+for i in range(5):
+  list1.insert(i,0)
+  if count==0:
+    for i in range(1,5):
+      list1[i]=list1[i]+list1[i-1]
+    print (list1[0],list1[1],list1[2],list1[3],list1[4])
+    list1=dis.copy()
+  elif count==1:
+    list1[3]=list1[2]+list1[3]
+    list1[4]=list1[3]+list1[4]
+    print (list1[0],list1[1],list1[2],list1[3],list1[4])
+    list1=dis.copy()
+  elif count==2:
+    list1[0]=list1[1]+list1[0]
+    list1[4]=list1[4]+list1[3]
+    print (list1[0],list1[1],list1[2],list1[3],list1[4])
+    list1=dis.copy()
+  elif count==3:
+    list1[0]=list1[0]+list1[1]+list1[2]
+    list1[1]=list1[1]+list1[2]
+    print (list1[0],list1[1],list1[2],list1[3],list1[4])
+    list1=dis.copy()
+  elif count==4:
+    list1[2]=list1[3]+list1[2]
+    list1[1]=list1[1]+list1[2]
+    list1[0]=list1[0]+list1[1]
+    print (list1[0],list1[1],list1[2],list1[3],list1[4])
+  count+=1
