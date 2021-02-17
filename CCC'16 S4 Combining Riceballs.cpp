@@ -1,3 +1,5 @@
+//question link: https://dmoj.ca/problem/ccc16s4
+
 #include <bits/stdc++.h>
 using namespace std;
 int n,a[402],ans;bool dp[402][402];
