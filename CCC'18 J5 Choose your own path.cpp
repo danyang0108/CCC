@@ -1,3 +1,5 @@
+//question link: https://dmoj.ca/problem/ccc18j5
+
 #include <bits/stdc++.h>
 using namespace std;
 #define MM 10002
