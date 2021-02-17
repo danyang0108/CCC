@@ -1,3 +1,5 @@
+#question link: https://dmoj.ca/problem/ccc18s2
+
 n=int(input())
 grid=[]
 for i in range(n):
