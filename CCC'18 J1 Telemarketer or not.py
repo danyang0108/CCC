@@ -1,3 +1,5 @@
+#question link: https://dmoj.ca/problem/ccc18j1
+
 digit=4
 if digit == 4:
     x=int(input())
