@@ -1,3 +1,5 @@
+//question link: https://dmoj.ca/problem/ccc19s2
+
 #include <bits/stdc++.h>
 using namespace std;
 bool prime[2000002];
