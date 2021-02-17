@@ -1,3 +1,5 @@
+//question link: https://dmoj.ca/problem/ccc17s3
+
 #include <bits/stdc++.h>
 using namespace std;
 int l[2002],n;
