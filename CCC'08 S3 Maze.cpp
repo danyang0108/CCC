@@ -1,3 +1,5 @@
+//question link: https://dmoj.ca/problem/ccc08s3
+
 #include <bits/stdc++.h>
 using namespace std;
 int t,r,c;
