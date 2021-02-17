@@ -1,3 +1,5 @@
+#question link: https://dmoj.ca/problem/ccc18j2
+
 n=int(input())
 str1=input()
 str1=list(str1)
