@@ -1,3 +1,5 @@
+//question link: https://dmoj.ca/problem/ccc16s3
+
 #include <bits/stdc++.h>
 using namespace std;
 int n,m,L,rt,edge,dis[100002];vector<int>adj[100002],adj2[100002];bool pho[100002];
