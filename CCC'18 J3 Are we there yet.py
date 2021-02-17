@@ -1,3 +1,5 @@
+#question link: https://dmoj.ca/problem/ccc18j3
+
 dis=list(map(int,input().split()))
 list1=dis.copy()
 count=0
